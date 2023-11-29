@@ -35,7 +35,6 @@ public record CardCreateRequestDTO(
     @ValidEnum(enumClass = TradeType.class, message = "유효하지 않은 거래 방식입니다.")
     TradeType tradeType,
 
-    @NotNull
     @Size(max = 30)
     String tradeArea,
 
